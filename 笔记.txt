@@ -38,3 +38,28 @@ div区块+css 网页布局
 块级元素：h1~h6 div p li ul ol table     块级元素可以设置宽高 不设置宽充满父元素 自己占一行
 空格不能连续使用，连续使用用转义字符
 空格&nbsp;     小于号&lt;    大于号&gt;
+<h1 style=""></h1>
+background背景颜色 color字体颜色 width宽度 height高度
+<!--（注释） -->ctrl+/
+颜色#rrggbb
+r=red   g=green     b=blue 十六进制自己编颜色
+link标签外部样式
+css选择器：
+1、元素选择器，标签选择器   h1{}
+2、id选择器                 #id{}
+3、class（类）选择器       .class{}
+4、后代选择器                 father son{}
+5、子代选择器(不支持IE.678版本)   father > son{}有兼容性问题
+6、分组选择器
+选择器的权重值
+id：100  class:10    tag（标签）:1
+
+行级元素里不能有块级元素
+padding内边距      margin外边距
+边框border：5px solid(实心)dotted（点）dashed（虚线）#000；
+body自带8个像素外边距
+IETester.exe
+backgrand: #cccccc url(图片) no-repeat 100px 50px;
+
+
+

@@ -1,0 +1,21 @@
+#header{
+    background: url(../img/banner.jpg) no-repeat center;
+    height: 600px;
+
+}
+#login,#header h1,#cart{
+    color: white;
+}
+#cart{
+    width: 260px;
+    height: 30px;
+    background:#000;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    text-align:center;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#header img{
+    vertical-align: middle;
+}
