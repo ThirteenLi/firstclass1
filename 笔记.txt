@@ -1,0 +1,20 @@
+网页开发
+1、html:内容
+2、css:样式
+3、javascript:交互
+psd切图到html+css+javascript
+标签<h1>     </h1>  (1-6)
+    <开始>内容<结束>
+document type文档类型
+html:5+tab
+<html>根标签
+<head>除了<title>外标签几乎都是给浏览器搜索引擎看的
+<body>给用户看的标签
+<head><body>兄弟标签
+<meta charset="UTF-8">//告诉浏览器用什么字符解析
+tab往后缩进
+shift+tab往前缩进
+<a href="http://www.baidu.com">baidu</a>
+a+tab a标签 锚点
+<a href="http://www.baidu.com" target="_blank">baidu</a>
+新窗口打开
