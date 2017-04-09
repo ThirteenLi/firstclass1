@@ -14,7 +14,27 @@ html:5+tab
 <meta charset="UTF-8">//告诉浏览器用什么字符解析
 tab往后缩进
 shift+tab往前缩进
-<a href="http://www.baidu.com">baidu</a>
+<a href="http://www.baidu.com">baidu</a>默认当前窗口打开
 a+tab a标签 锚点
 <a href="http://www.baidu.com" target="_blank">baidu</a>
 新窗口打开
+png透明 jpg不透明
+<img src="图片" alt="图片加载失败时友好提示" title="悬停显示信息"/>图片标签
+<ol>
+    <li>aa</li>
+    <li>bb</li>
+    <li>cc</li>
+</ol>有序列表
+<ul>
+    <li>aa</li>
+    <li>bb</li>
+    <li>cc</li>
+</ul>无序列表
+div区块+css 网页布局
+<table>表标签    <tr>行   <td>列
+<p>段落标签     <span>字间隔
+网页中标签都是矩形
+行级元素：span a img     宽高是内容撑开的 行级元素和行级元素会在一行显示
+块级元素：h1~h6 div p li ul ol table     块级元素可以设置宽高 不设置宽充满父元素 自己占一行
+空格不能连续使用，连续使用用转义字符
+空格&nbsp;     小于号&lt;    大于号&gt;
