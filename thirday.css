@@ -6,3 +6,47 @@ h3{
     background: #0f0;
     color: #1502ff;
 }
+.aa{
+    background: #2b03a7;
+    color: #af03ab;
+}
+h2{
+    border: 10px solid #2b03a7;
+    margin: 50px;
+    padding: 50px;
+    width:200px;
+    height:200px;
+    background: #ff1380;
+}
+*{
+    padding: 0;
+       margin: 0;
+}
+a{
+text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    border:0;
+}
+#header{
+    background: url(job/img/banner.jpg) no-repeat center center;
+    height:500px;
+}
+#header a,#header h1,#header div{
+    color:white; cursor:pointer;
+}
+#header div{
+    background: grey;
+    width:250px;
+    height: 50px;
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+text-align:center;
+    cursor:pointer;
+}
+#header img{
+    vertical-align: bottom; cursor:pointer;
+}
