@@ -6,9 +6,21 @@
         <meta name="description" content="简介，进去就看不到了"/>
         <meta name="keywords" content="关键字"/>
         <title>我的网站</title>
+        <style>
+            h2{
+                background: #000;
+                color: #ffff00;
+            }
+        </style>
+        <link rel="stylesheet" href="thirday.css"/>
     </head>
     <body>
-        <h1>这是个h1标签</h1><h2>这是个h2标签</h2><h3>这是个h3标签</h3><h4>这是个h4标签</h4><h5>这是个h5标签</h5><h6>这是个h6标签</h6>
+        <h1 style="background:red;color:blue;">这是个h1标签</h1>
+        <h2>这是个h2标签</h2>
+        <h3>这是个h3标签</h3>
+        <h4 id="hh">这是个h4标签</h4>
+        <h5>这是个h5标签</h5>
+        <h6>这是个h6标签</h6>
         <a href="https://www.baidu.com" target="_blank">百度一下你就知道</a>
     <ol>
         <li>列表1</li>
@@ -30,9 +42,11 @@
     <span>this is a span</span>
     <span>this is a span</span>
         <a href="https://www.baidu.com" target="_blank">百度一下你就知道</a>
-<table>
-    <tr><td>11</td><td>12</td></tr>
-    <tr><td>21</td><td>22</td><td>23</td></tr>
+<table border="6">
+    <tr><td colspan="2">11</td> <td rowspan="2">23</td></tr>
+    <tr><td>21</td>
+        <td>22</td>
+       </tr>
 </table>
 
 
@@ -42,10 +56,7 @@
 
 
 
-
-
-
-
+    
 
     </body>
 </html>
