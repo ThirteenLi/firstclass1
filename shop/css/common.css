@@ -13,3 +13,8 @@ img{
 li{
     list-style: none;
 }
+.wrapper{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}

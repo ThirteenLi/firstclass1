@@ -4,3 +4,14 @@ clear:both;清除浮动，不会覆盖
 元素塌陷：子元素脱离文档流，父元素没有高度
 1、给父元素固定一个高度
 2、给父元素浮动
+height:100%;相对高度，相对于父元素
+overflow:hidden;溢出隐藏
+子元素设置margin-top父元素会掉下去
+两元素兄弟关系，margin-bottem与margin-top取最大值
+display: block;行级元素转化为块级元素
+display: inline;块级元素转化为行级元素
+display: inline-block;同时具有两种元素属性
+display：none；不显示
+display有兼容性问题
+行级元素中回车会有空白
+行级元素脱离文档流也能设置长宽高
