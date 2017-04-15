@@ -18,7 +18,7 @@ shift+tab往前缩进
 a+tab a标签 锚点
 <a href="http://www.baidu.com" target="_blank">baidu</a>
 新窗口打开
-png透明 jpg不透明
+jpg不透明png透明
 <img src="图片" alt="图片加载失败时友好提示" title="悬停显示信息"/>图片标签
 <ol>
     <li>aa</li>
@@ -50,16 +50,17 @@ css选择器：
 3、class（类）选择器       .class{}
 4、后代选择器                 father son{}
 5、子代选择器(不支持IE.678版本)   father > son{}有兼容性问题
-6、分组选择器
+6、分组选择器 hi,div,#id{}
+7、多类选择器 .aa.bb{}
 选择器的权重值
 id：100  class:10    tag（标签）:1
-
+权重值可以叠加   #id .class  :110
 行级元素里不能有块级元素
 padding内边距      margin外边距
 边框border：5px solid(实心)dotted（点）dashed（虚线）#000；
 body自带8个像素外边距
 IETester.exe
 backgrand: #cccccc url(图片) no-repeat 100px 50px;
+p自带16上下外边距
 
-
-
+normalize.css v2.0.1

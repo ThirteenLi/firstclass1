@@ -32,7 +32,7 @@ img{
     border:0;
 }
 #header{
-    background: url(job/img/banner.jpg) no-repeat center center;
+    background: url(shop/img/banner.jpg) no-repeat center center;
     height:500px;
 }
 #header a,#header h1,#header div{
@@ -41,10 +41,11 @@ img{
 #header div{
     background: grey;
     width:250px;
-    height: 50px;
+    height: 30px;
     filter:alpha(opacity=50);
     opacity: 0.5;
 text-align:center;
+    padding: 10px 20px;
     cursor:pointer;
 }
 #header img{
