@@ -28,7 +28,7 @@
     vertical-align: middle;
 
 }
-#header .float{
+#header .float,#new-product .float{
     float:left;
 }
 #header h1 {
@@ -92,6 +92,28 @@
     text-decoration: underline;
 }
 #new-product{
-    height: 600px;
+    height: 210px;
+    margin-top: 56px;
     background: #f00;
+}
+#new-product .npb{
+    height: 100%;
+    width:380px;
+}
+#npb1{
+    background: url(../img/bg1.jpg) no-repeat left 0;
+
+}
+#npb2{
+    background: url(../img/bg2.jpg) no-repeat center 0;
+
+}
+#npb3{
+    background: url(../img/bg3.jpg) no-repeat right 0;
+}
+#new-product .npb h2{
+    color: #ffff00;
+    padding-top: 156px;
+    padding-left: 190px;
+    cursor: pointer;
 }
