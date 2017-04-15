@@ -91,3 +91,7 @@
 #mei-menu div a:hover{
     text-decoration: underline;
 }
+#new-product{
+    height: 600px;
+    background: #f00;
+}
