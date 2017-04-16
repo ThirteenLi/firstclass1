@@ -1,3 +1,4 @@
+/*header开始*/
 #header{
     background: url(../img/banner.jpg) no-repeat center;
     height: 600px;
@@ -26,14 +27,12 @@
     margin-left: 100px;
 }
 #main_header p{
-    text-decoration: underline;
     color: #fff;
     height: 50px;
     width: 100px;
     position: relative;
     top:-63px;
     left:950px;
-    
 }
 #header .float,#new-product .float{
     float:left;
@@ -60,7 +59,7 @@
 #nav li{
     width:190px;
     height: 40px;
-    background: pink;
+    background: deeppink;
     float: left;
     text-align: center;
     line-height: 40px;
@@ -88,7 +87,7 @@
     float: left;
     width: 20%;
     height: 100%;
-    background:deeppink;
+    background:lightpink;
 }
 #mei-menu div a{
     height:50px;
@@ -100,8 +99,9 @@
 }
 #mei-menu div a:hover{
     text-decoration: underline;
-
 }
+/*header结束*/
+/*new-product开始*/
 #new-product{
     height: 210px;
     margin-top: 56px;
@@ -129,4 +129,90 @@
     cursor: pointer;
     font-size: 33px;
     font-weight:bolder;
+}
+/*new-product结束*/
+/*product开始*/
+#product{
+    margin-top: 40px;
+    height: 1000px;
+}
+#product .box{
+    border:1px solid #ccc;
+    width:360px;
+    height: 439px;
+    margin-right: 18px;
+    margin-top: 20px;
+    float: left;
+}
+#product .box img{
+    height:248px;
+    width:248px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#product .box span{
+    background: deeppink;
+    color: white;
+    float: right;
+}
+#product .box p{
+    font-size: 27px;
+}
+#product .box input{
+    text-indent:10px;
+    height:28px;
+    margin: 10px 0;
+}
+#product .box button{
+    color:white;
+    background: deeppink;
+    width: 150px;
+    height: 38px;
+    font-size: 27px;
+    font-weight:800;
+}
+/*product结束*/
+/*problem开始*/
+#problem{
+    background: url("../img/banner.jpg") no-repeat center;
+    height: 297px;
+}
+#problem .box ul{
+    padding-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+    width:100%;
+}
+
+#problem .box li{
+    list-style:disc;
+    color: #fff;
+    width:100%;
+    cursor: pointer;
+}
+#problem .box{
+    float: left;
+    width:190px;
+    margin-right: 30px;
+}
+#problem .box li:hover{
+    text-decoration: underline;
+}
+#footer{
+    height:80px;
+    background: deeppink;
+}
+#footer h2,#footer h3{
+    color:white;
+    line-height: 80px;
+}
+#footer h3{
+    float: right;
+}
+#footer h2{
+    float: left;
+}
+#footer h2:hover{
+    background: #f00;
+
 }
