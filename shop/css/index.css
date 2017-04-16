@@ -11,22 +11,29 @@
 #login a{
     color:white;
 }
-#cart{
+#main_header #cart{
     width: 260px;
     height: 30px;
-    background:#000;
-    opacity:0.5;
-    filter:alpha(opacity=50);
+
+    background:#000 url(../img/cart.png) no-repeat 80%;
+    opacity:0.6;
+    filter:alpha(opacity=60);
     text-align:center;
     padding: 10px;
-    line-height: 0;
+    line-height: 30px;
     margin-top: 25px;
     cursor: pointer;
     margin-left: 100px;
 }
-#header img{
-    vertical-align: middle;
-
+#main_header p{
+    text-decoration: underline;
+    color: #fff;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    top:-63px;
+    left:950px;
+    
 }
 #header .float,#new-product .float{
     float:left;
@@ -41,16 +48,19 @@
 #main_header{
     height: 100px;
     line-height: 100px;
-    background: #f00;
+    /*background: #f00;*/
     width:100%;
 }
 #login a:hover{
     text-decoration: underline;
 }
+#nav{
+    height: 40px;
+}
 #nav li{
     width:190px;
     height: 40px;
-    background: #21def9;
+    background: pink;
     float: left;
     text-align: center;
     line-height: 40px;
@@ -69,7 +79,7 @@
     display:none;
 }
 #nav .change:hover{
-    background: blue;
+    background: palevioletred;
 }
 #mei:hover #mei-menu{
     display:block;
@@ -78,7 +88,7 @@
     float: left;
     width: 20%;
     height: 100%;
-    background: green;
+    background:deeppink;
 }
 #mei-menu div a{
     height:50px;
@@ -90,11 +100,12 @@
 }
 #mei-menu div a:hover{
     text-decoration: underline;
+
 }
 #new-product{
     height: 210px;
     margin-top: 56px;
-    background: #f00;
+    /*background: #f00;*/
 }
 #new-product .npb{
     height: 100%;
