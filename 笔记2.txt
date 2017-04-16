@@ -24,3 +24,9 @@ absolute:绝对定位，相对于离他最近的已定位的祖先元素
 fixed:固定定位，相对于浏览器，小广告（兼容性问题）
 static默认值
 父元素相对定位，子元素绝对定位，50%定位，margin-top设定子元素高度一半居中
+<input>输入框 value="1"默认值1
+text-indent:px;文本缩进
+outline:none;边框
+<br>换行
+<button>按钮
+默认字体大小16像素，中文不能小于20px
