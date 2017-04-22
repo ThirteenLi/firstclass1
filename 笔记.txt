@@ -53,6 +53,7 @@ css选择器：
 6、分组选择器 hi,div,#id{}
 7、多类选择器 .aa.bb{}
 8、伪类选择器 a:hover{}   (IE早期版本只对a好使)
+9、属性选择器 div[id]{}选中带id的div
 选择器的权重值
 id：100  class:10    tag（标签）:1
 权重值可以叠加   #id .class  :110

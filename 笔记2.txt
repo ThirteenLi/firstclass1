@@ -30,3 +30,5 @@ outline:none;边框
 <br>换行
 <button>按钮
 默认字体大小16像素，中文不能小于20px
+font-family字体
+行级元素上下外边距没有作用
