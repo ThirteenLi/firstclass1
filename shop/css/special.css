@@ -1,0 +1,9 @@
+#product img{
+    width: 114px;
+    height: 114px;
+    float: left;
+}
+#product .box{
+    width: 1140px;
+    height: 1000px;
+}

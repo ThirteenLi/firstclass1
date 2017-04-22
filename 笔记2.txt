@@ -32,3 +32,5 @@ outline:none;边框
 默认字体大小16像素，中文不能小于20px
 font-family字体
 行级元素上下外边距没有作用
+z-index: num;层级 数越大层级越高 只对定位起作用
+border-radius边框圆角
