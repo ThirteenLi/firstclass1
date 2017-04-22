@@ -1,0 +1,40 @@
+#login{
+    height: 600px;
+}
+#login h2{
+    text-align: center;
+}
+#login #box1,#login #box2{
+    height: 300px;
+    width: 440px;
+    margin-top: 10px;
+}
+#login #box1 label{
+    margin: 10px;
+    display:block;
+}
+#login #box1 #coin{
+    height: 24px;
+    width: 96px;
+    background: #5478ff;
+    outline:none;
+    margin-left: 10px;
+    display:block;
+    border-radius: 10px;
+}
+#login #box1 #coin:hover{
+    border:1px solid #000;
+    background: #fff;
+    font-size: larger;
+}
+#login #box1 a{
+    font-size: x-small;
+    color:purple;
+    margin-left: 10px;
+}
+#login #box1{
+    float: left;
+}
+#login #box2{
+    float: right;
+}
