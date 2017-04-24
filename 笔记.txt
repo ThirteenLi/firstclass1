@@ -66,3 +66,8 @@ backgrand: #cccccc url(图片) no-repeat 100px 50px;
 p自带16上下外边距
 
 normalize.css v2.0.1
+网站:www.iconfont.cn阿里巴巴矢量图库（小图标）
+svg格式 无限放大不失真
+font awesome.io
+www.easyicon.net
+input type=number
