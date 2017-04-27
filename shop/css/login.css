@@ -1,40 +1,27 @@
-#login{
-    height: 600px;
+/*user start*/
+#user{
+    height: 500px;
 }
-#login h2{
-    text-align: center;
+#user h2{
+    margin-top: 56px;
 }
-#login #box1,#login #box2{
-    height: 300px;
-    width: 440px;
-    margin-top: 10px;
-}
-#login #box1 label{
-    margin: 10px;
-    display:block;
-}
-#login #box1 #coin{
-    height: 24px;
-    width: 96px;
-    background: #5478ff;
-    outline:none;
-    margin-left: 10px;
-    display:block;
-    border-radius: 10px;
-}
-#login #box1 #coin:hover{
-    border:1px solid #000;
-    background: #fff;
-    font-size: larger;
-}
-#login #box1 a{
-    font-size: x-small;
-    color:purple;
-    margin-left: 10px;
-}
-#login #box1{
+#user .box{
+    width: 570px;
     float: left;
+    overflow: hidden;
 }
-#login #box2{
-    float: right;
+#user #old-user{
+    padding-top: 28px;
 }
+#user #old-user h5{
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#user #old-user .input{
+    height: 28px;
+    width: 381px;
+}
+
+/*user end*/
