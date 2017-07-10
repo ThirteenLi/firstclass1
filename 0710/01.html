@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var o1={//对象直接量   直接写
+        name:"lisi",
+        age:34,
+        brother:{
+            name:"zhangsan"
+        }
+    };
+    var o2=o1;
+    var o3={};
+    //    浅克隆
+    for(var p in o1){
+        o3[p]=o1[p];
+    }
+
+    o2.name="wangwu";
+    console.log(o1);
+    console.log(o2);
+    console.log(o3);
+    o1.brother.name="qisini";
+//深克隆封装函数
+    function cloneObj(obj){
+        var newObj={};
+        for(var p in obj){
+            if(typeof obj[p]==='object'){
+               newObj[p]= arguments.callee(obj[p]);//arguments数组存实参
+                //指向当前被调用的函数本身 arguments.callee();
+            }else{
+                newObj[p]=obj[p];
+            }
+        }
+
+        return newObj;
+    }
+</script>
+</body>
+</html>
