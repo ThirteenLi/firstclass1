@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div1{
+            width: 220px;
+            height: 200px;
+            background: #ff0000;
+        }
+        #div2{
+            width: 50%;
+            height: 50px;
+            background: #ffff00;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">
+    <div id="div2"></div>
+</div>
+<script>
+    var str='abcdefabc';
+    console.log(str.indexOf('c'));
+    console.log(str.lastIndexOf('c'));
+    console.log(str.search('c'));
+    console.log(str.search(/c/));//search可以写正则表达式
+    function aa(name){
+        alert(this);
+        alert(name);
+    }
+    aa.call({name:"lisi"},"lisi");//第一个参数改变 this，之后参数依次给函数形参
+    aa.apply({},[]);//第一个参数改变this 第二个参数是数组，依次给形参
+</script>
+</body>
+</html>
