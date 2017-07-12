@@ -1,0 +1,10 @@
+类：具有相同的属性和方法，首字母大写
+function Cat(name){
+    this.name=name;
+}//构造函数
+Cat.prototype.eat=function(){
+    alert(this.name+'is eating!');
+};
+构造函数 原型 父类 超级父类Object
+定义一个函数的时候，把属性放在构造函数里，方法放在原型中
+var cat1=new Cat('mini');
