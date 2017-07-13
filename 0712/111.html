@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="div1">213</div>
+<script>
+    function next(elem){
+        do{
+            elem=elem&&elem.nextSibling;
+        }while(elem&&elem.nodeType!=1);
+        return elem;
+    }
+    var odiv1=document.getElementById('div1');
+    console.log(next(next(odiv1)));
+</script>
+</body>
+</html>
