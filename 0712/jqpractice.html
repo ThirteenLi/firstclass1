@@ -154,6 +154,21 @@
                 alert(this.innerHTML);
             });
             console.log($('#div1').next());
+            function Cat(name,age){
+                this.name=name||'tom';
+                this.age=age||3;
+            }
+            Cat.prototype.eat=function(){
+                alert(this.name+this.age+'is happy');
+            };
+            var cat1=new Cat();
+            console.log(cat1.name);
+            console.log(cat1.age);
+            var cat2=new Cat('mini','4');
+            console.log(cat2.name);
+            console.log(cat2.age);
+            cat1.eat();
+            cat2.eat();
         </script>
     </body>
 </html>
