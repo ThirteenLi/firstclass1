@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>选项卡</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            position: relative;
+            width: 80%;
+            height: 440px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        .title{
+            width: 100%;
+            background: #4d4d4d;
+            height: 40px;
+        }
+        .title h3{
+            cursor:pointer;
+            margin-top: 15px;
+            color:#fff;
+            font-weight: 400;
+            font-size: 16px;
+            width: 15%;
+            height: 25px;
+            margin-right: 10px;
+            line-height: 25px;
+            float: left;
+            background: #000;
+           -webkit-border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+        .title h3.selected{
+            background: #ffffff;
+            color:#000000;
+        }
+        .content{
+            position: absolute;
+            width: 300%;
+            height: 400px;
+            display: flex;
+            background: #cccccc;
+            top:40px;
+            left:0;
+        }
+        .content div{
+            color:#0ff;
+            flex-grow: 1;
+            font-size: 80px;
+            font-weight: bolder;
+            line-height: 400px;
+            text-align: center;
+            text-shadow: 5px 2px 2px rgba(255,125,125,0.9);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <h3 class="selected">选项一</h3>
+        <h3>选项二</h3>
+        <h3>选项三</h3>
+    </div>
+    <div class="content">
+        <div>内容一</div>
+        <div>内容二</div>
+        <div>内容三</div>
+    </div>
+</div>
+<script src="../jquery-1.11.2.js"></script>
+<script>
+    $(function(){
+        var $title=$(".title");
+        var $content=$('.content');
+        $title.on('click',function(e){
+            var width=- $(e.target).index()*this.offsetWidth+"px";
+            $(this).children().removeClass('selected');
+            $(e.target).addClass('selected');
+            $content.stop().animate({
+                left:width
+            },500);
+        });
+    });
+
+</script>
+</body>
+</html>
