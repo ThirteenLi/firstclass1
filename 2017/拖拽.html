@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #ball{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top:50px solid #0000ff;
+            border-left:50px solid #00ffff;
+            border-bottom:50px solid #ff00ff;
+            border-right:50px solid #00ff00;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="ball"></div>
+    <script>
+        (function(){
+            var oBall=document.getElementById("ball");
+            oBall.onmousedown=function(e){
+                e=e||window.event;
+                var height=this.offsetHeight*0.5;
+                var width=this.offsetWidth*0.5;
+                document.onmousemove=function(e){
+                    e=e||window.event;
+                    oBall.style.left= e.clientX-width+"px";
+                    oBall.style.top= e.clientY-height+"px";
+                };
+                document.onmouseup=function(){
+                    document.onmousemove=null;
+                };
+            };
+
+
+
+
+        })();
+    </script>
+</body>
+</html>
