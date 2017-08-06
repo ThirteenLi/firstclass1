@@ -2,9 +2,137 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>轮播图</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .container{
+            width: 480px;
+            height: 300px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .picture{
+            position: relative;
+            left:0;
+            top:0;
+            width: 400%;
+            height: 100%;
+        }
+        .picture img{
+            width: 480px;
+            height: 300px;
+            display:block;
+            float: left;
+        }
+        .nav{
+            width: 100px;
+            height: 20px;
+            position:absolute;
+            bottom:10px;
+            right:5px;
+        }
+        .nav li{
+            float: left;
+        }
+        .nav li,.left,.right{
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            background: #000;
+            color: #fff;
+            cursor:pointer;
+            margin-right: 5px;
+        }
+        .left{
+            position: absolute;
+            bottom:10px;
+            left: 5px;
+        }
+        .right{
+            position: absolute;
+            bottom:10px;
+            left: 30px;
+        }
+        .nav .selected{
+            background: #ff0000;
+            color:#000000;
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+    <div class="picture">
+        <img src="01.jpg" alt=""/>
+        <img src="02.jpg" alt=""/>
+        <img src="03.jpg" alt=""/>
+        <img src="04.jpg" alt=""/>
+    </div>
+    <ul class="nav">
+        <li class="selected">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <div class="left">&lt;</div>
+    <div class="right">&gt;</div>
+</div>
+<script src="../jquery-1.11.2.js"></script>
+<script>
+    $(function(){
+        var $container=$('.container');
+        var $picture=$(".picture");
+        var $nav=$(".nav");
+        var $left=$(".left");
+        var $right=$(".right");
+        var nowindex=0;
+        var timer;
+        $nav.on("click",function(e){
+            nowindex=$(e.target).index();
+            $nav.children().removeClass("selected");
+            $(e.target).addClass("selected");
+            var left= - nowindex * $picture.children().prop('width')+"px";
+            $picture.stop().animate({
+                left:left
+            },500);
+        });
+        $left.on('click',function(){
+            nowindex=(nowindex+3)%4;
+            $nav.children().removeClass("selected");
+            $('li:eq('+nowindex+')',$nav).addClass('selected');
+            var left= - nowindex * $picture.children().prop('width')+"px";
+            $picture.stop().animate({
+                left:left
+            },500);
+        });
+        $right.on('click',function(){
+            nowindex=(nowindex+1)%4;
+            $nav.children().removeClass("selected");
+            $('li:eq('+nowindex+')',$nav).addClass('selected');
+            var left= - nowindex * $picture.children().prop('width')+"px";
+            $picture.stop().animate({
+                left:left
+            },500);
+        });
+        timer=setInterval(function(){
+            $right.trigger('click');
+        },1000);
+        $container.hover(function(){
+            clearInterval(timer);
+        },function(){
+            timer=setInterval(function(){
+                $right.trigger('click');
+            },1000);
+        });
+    });
 
+</script>
 </body>
 </html>
