@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>搜索框</title>
+</head>
+<body>
+<input type="text"/>
+<ul id="result">
+    <li>0yul</li>
+    <li>asiodjo</li>
+    <li>0003</li>
+    <li>0yyy4</li>
+    <li>0vfjf5</li>
+    <li>0006</li>
+    <li>0fdh7</li>
+    <li>0tjr8</li>
+    <li>0jt09</li>
+    <li>0jtjmm0</li>
+</ul>
+<script src="../jquery-1.11.2.js"></script>
+<script>
+    $(function(){
+        var $input=$("input");
+        $input.on('keyup',function(e){
+            $("#result li").css("background","transparent");
+            if($(this).val()!=""){
+                $("#result li:contains("+ $(this).val().toLowerCase() +")").css("background","red");
+            }
+
+        });
+    });
+</script>
+</body>
+</html>
